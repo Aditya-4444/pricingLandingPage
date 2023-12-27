@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON RUSH - Power House of the Area </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+<body onload="updatePrice()">
+    <div class="container mx-auto">
+        <header>
+            <nav class="navbar-container flex justify-between">
+                <div class="name bold flex align ">IRON RUSH</div>
+                <ul class="navbar flex align">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Trainers</li>
+                    <li>services</li>
+                    <li>Contact Us</li>
+                </ul>
+                <div class="icon"><i class="fa-solid fa-bars menu"></i></div>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-height">
+            <section class="section1">
+                <div class="section1-coontainer flex">
+                    <div class="top-left">
+                        <h1>LET'S WORKOUT</h1>
+                        <h3>CHOOSE YOUR PLAN</h3>
+                        <p>We are always there to help you to make a healthy body </p>
+                    </div>
+                    <div class="top-right flex">
+                        <img src="girl.svg" alt="workout">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section2 flex">
+                <h1 class="head flex justify">Pricing</h1>
+                <p>More than 5 million clients have transformed their lives with high intensity with Iron Rush Program</p>
+                <select id="currencyDropdown">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="INR">INR</option>
+                    <!-- Add more currency options as needed -->
+                  </select>
+                <div class="toggle-container">
+                    <label class="yearlyPlan">
+                      <input type="checkbox" id="discountToggle"> Apply Yearly Discount
+                    </label>
+                </div>
+                <div class="boxes flex">
+                    <div class="box">
+                        <h2>Basic</h2>
+                        <img src="basic.webp" alt="" class="basic">
+                        <ul>
+                            <div class="price" id="basicPrice">45</div>
+                            <li><i class="fa fa-circle bullets"></i>PERSONAL TRAINER</li>
+                            <li><i class="fa fa-circle bullets"></i>BODY BUILDING</li>
+                            <li><i class="fa fa-circle bullets"></i>YOGA</li>
+                            <li><i class="fa fa-circle bullets"></i>WEIGHT LOSS</li>
+                        </ul>
+                            <button class="btn">Purchase Now</button>
+                    </div>
+                    <div class="box">
+                        <h2>Advance</h2>
+                        <img src="expert.avif" alt="" class="basic">
+                        <ul>
+                            <div class="price" id="advancePrice">65</div>
+                            <li><i class="fa fa-circle bullets"></i>PERSONAL TRAINER</li>
+                            <li><i class="fa fa-circle bullets"></i>BODY BUILDING</li>
+                            <li><i class="fa fa-circle bullets"></i>YOGA</li>
+                            <li><i class="fa fa-circle bullets"></i>WEIGHT LOSS</li>
+                        </ul>
+                        <button class="btn">Purchase Now</button>
+                    </div>
+                    <div class="box">
+                        <h2>Pro</h2>
+                        <img src="pro.jpg" alt="" class="basic">
+                        <ul>
+                            <div class="price" id="proPrice">95</div>
+                            <li><i class="fa fa-circle bullets"></i>PERSONAL TRAINER</li>
+                            <li><i class="fa fa-circle bullets"></i>BODY BUILDING</li>
+                            <li><i class="fa fa-circle bullets"></i>YOGA</li>
+                            <li><i class="fa fa-circle bullets"></i>WEIGHT LOSS</li>
+                        </ul>
+                        <button class="btn">Purchase Now</button>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section3"></section>
+            <hr>
+        </main>
+        <footer class="footer">
+            Copyright &copy; IronRush.com| All rights reserved
+        </footer>
+    </div>
+    <script src="landingPage.js"></script>
+</body>
+</html>
